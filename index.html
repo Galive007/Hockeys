@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockeys</title>
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- tailwinds & daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -13,13 +18,20 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary-color': '#FF4240',
               }
             }
           }
         }
       </script>
+    <!-- styles -->
+    <style>
+      .manrope{
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
 </head>
-<body>
+<body class="manrope">
     <header>
       <div class="container mx-auto">
         <!-- nav section -->
@@ -31,28 +43,22 @@
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    
-                  </li>
-                  <li><a>Item 3</a></li>
+                  <li class="hover:text-primary-color hover:bg-white"><a>Home</a></li>
+                  <li class="hover:text-primary-color"><a>About</a></li>
+                  <li class="hover:text-primary-color"><a>Pages</a></li>
+                  <li class="hover:text-primary-color"><a>Blog</a></li>
+                  <li class="hover:text-primary-color"><a>Contact</a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost text-xl">daisyUI</a>
+              <a class="btn btn-ghost text-4xl font-extrabold gap-0">Hockey<span class="text-primary-color">’</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
-                <li>
-                  <details>
-                    <summary>Parent</summary>
-                    <ul class="p-2">
-                      
-                    </ul>
-                  </details>
-                </li>
-                <li><a>Item 3</a></li>
+              <ul class="menu menu-horizontal px-1 text-base font-bold">
+                  <li class="hover:text-primary-color"><a>Home</a></li>
+                  <li class="hover:text-primary-color"><a >About</a></li>
+                  <li class="hover:text-primary-color"><a >Pages</a></li>
+                  <li class="hover:text-primary-color"><a>Blog</a></li>
+                  <li class="hover:text-primary-color"><a>Contact</a></li>
               </ul>
             </div>
             
@@ -60,11 +66,12 @@
               <button class="btn btn-ghost btn-circle">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
               </button>
-              <a class="btn">Button</a>
+              <a class="btn px-6 py-4 text-white bg-primary-color">Get Ticket</a>
             </div>
           </div>
         </nav>
       </div>
+
     </header>
     <main>
 
